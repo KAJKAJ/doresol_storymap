@@ -290,6 +290,12 @@ module.exports = function (grunt) {
         cwd: '<%= sourceFolder %>/gfx',
         src: '**',
         dest: '<%= distFolder %>/gfx'
+      },
+      locale:{
+        expand: true,
+        cwd: '<%= sourceFolder %>/js/language/locale',
+        src: '**',
+        dest: '<%= distFolder %>/js/locale'
       }
     },
 
@@ -319,7 +325,8 @@ module.exports = function (grunt) {
     'uglify:js',
     'less:dist',
     'copy:css',
-    'copy:gfx'
+    'copy:gfx',
+    'copy:locale'
   ]);
 
   grunt.registerTask('default', [
