@@ -2577,18 +2577,18 @@ VCO.LoadIt = (function (doc) {
   };
 })(this.document);
 ;VCO.Language = {
-	name: 					"English",
-	lang: 					"en",
+	name: 					"Korean",
+	lang: 					"ko",
 	messages: {
-		loading: 			"Loading",
-		wikipedia: 			"From Wikipedia, the free encyclopedia"
+		loading: 			"지도를 읽어오고 있습니다.",
+		wikipedia: 			"위키피디아로부터"
 	},
 	buttons: {
-	    map_overview: 		"Map Overview",
-		overview: 			"Overview",
-	    backtostart: 		"Back To Beginning",
-	    collapse_toggle: 	"Hide Map",
-	    uncollapse_toggle: 	"Show Map"
+	    map_overview: 		"전체 보기",
+		overview: 			"개요",
+	    backtostart: 		"처음으로",
+	    collapse_toggle: 	"숨기기",
+	    uncollapse_toggle: 	"보기 "
 	}
 };/* The equations defined here are open source under BSD License.
  * http://www.robertpenner.com/easing_terms_of_use.html (c) 2003 Robert Penner
