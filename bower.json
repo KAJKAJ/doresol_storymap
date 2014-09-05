@@ -2,22 +2,22 @@
   "name": "doresol_storymap",
   "version": "0.0.1",
   "description": "modification of storymap.js for doresol",
-  // "main": [
-  //   "build/js/timeline.js",
-  //   "build/css/timeline.css"    
-  // ],
-  // "keywords": [
-  //   "doresol",
-  //   "timeline",
-  //   "timelinejs",
-  //   "timeline.js"
-  // ],
-  // "repository": {
-  // "type": "git",
-  // "url": "git@github.com:SunJang/doresol_timeline.git"
-  // },
-  // "license": "MPL v2.0",
-  // "ignore": [
-  //   "**/.*"    
-  // ]
+  "main": [
+    "build/js/storymap.js",
+    "build/css/storymap.css"    
+  ],
+  "keywords": [
+    "doresol",
+    "storymap",
+    "storymapjs",
+    "storymap.js"
+  ],
+  "repository": {
+  "type": "git",
+  "url": "git@github.com:HummingTop/doresol_storymap.git"
+  },
+  "license": "MPL v2.0",
+  "ignore": [
+    "**/.*"    
+  ]
 }
