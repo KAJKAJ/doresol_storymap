@@ -29,7 +29,7 @@
 	var retina = 'devicePixelRatio' in window && window.devicePixelRatio > 1;
 
 	if (!retina && 'matchMedia' in window) {
-		var matches = window.matchMedia('(min-resolution:144dpi)');
+		var matches = window.matchMedia('(min-resolution:144dppx)');
 		retina = matches && matches.matches;
 	}
 

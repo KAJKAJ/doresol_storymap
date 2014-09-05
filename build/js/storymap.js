@@ -2088,7 +2088,7 @@ VCO.Events.fire = VCO.Events.fireEvent;;/*
 	var retina = 'devicePixelRatio' in window && window.devicePixelRatio > 1;
 
 	if (!retina && 'matchMedia' in window) {
-		var matches = window.matchMedia('(min-resolution:144dpi)');
+		var matches = window.matchMedia('(min-resolution:144dppx)');
 		retina = matches && matches.matches;
 	}
 
@@ -7837,8 +7837,8 @@ L.Mixin.Events.fire = L.Mixin.Events.fireEvent;
 		pointer = (window.PointerEvent && window.navigator.pointerEnabled && window.navigator.maxTouchPoints) ||
 				  msPointer,
 	    retina = ('devicePixelRatio' in window && window.devicePixelRatio > 1) ||
-	             ('matchMedia' in window && window.matchMedia('(min-resolution:144dpi)') &&
-	              window.matchMedia('(min-resolution:144dpi)').matches),
+	             ('matchMedia' in window && window.matchMedia('(min-resolution:144dppx)') &&
+	              window.matchMedia('(min-resolution:144dppx)').matches),
 
 	    doc = document.documentElement,
 	    ie3d = ie && ('transition' in doc.style),

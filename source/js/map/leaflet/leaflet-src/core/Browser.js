@@ -22,8 +22,8 @@
 		pointer = (window.PointerEvent && window.navigator.pointerEnabled && window.navigator.maxTouchPoints) ||
 				  msPointer,
 	    retina = ('devicePixelRatio' in window && window.devicePixelRatio > 1) ||
-	             ('matchMedia' in window && window.matchMedia('(min-resolution:144dpi)') &&
-	              window.matchMedia('(min-resolution:144dpi)').matches),
+	             ('matchMedia' in window && window.matchMedia('(min-resolution:144dppx)') &&
+	              window.matchMedia('(min-resolution:144dppx)').matches),
 
 	    doc = document.documentElement,
 	    ie3d = ie && ('transition' in doc.style),
