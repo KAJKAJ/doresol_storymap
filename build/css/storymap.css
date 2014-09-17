@@ -307,7 +307,7 @@
 }
 .vco-storymap p a:hover,
 .vco-storymap p a:focus {
-  color: #c34528;
+  color: #27ae60;
   text-decoration: none;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dppx) {
@@ -318,7 +318,7 @@
   }
   .vco-storymap p a:hover,
   .vco-storymap p a:focus {
-    color: #c34528;
+    color: #27ae60;
     text-decoration: underline;
   }
 }
@@ -332,11 +332,11 @@
 }
 .vco-storymap a {
   text-decoration: none;
-  color: #c34528;
+  color: #27ae60;
 }
 .vco-storymap a:hover {
   text-decoration: underline;
-  color: #6e2717;
+  color: #145b32;
 }
 .vco-storymap .vco-caption,
 .vco-storymap .vco-credit,
@@ -741,7 +741,7 @@
   top: -2px;
 }
 .vco-menubar-button:hover {
-  background: #c34528;
+  background: #27ae60;
   color: #ffffff;
 }
 .vco-mobile .vco-menubar-button:hover {
@@ -749,7 +749,7 @@
   color: #737373;
 }
 .vco-mobile .vco-menubar-button:active {
-  background: #c34528;
+  background: #27ae60;
   color: #ffffff;
 }
 @keyframes invertToBlack {
@@ -1588,7 +1588,7 @@
 }
 .vcard a:hover .fn,
 .vcard a:hover .nickname {
-  color: #c34528;
+  color: #27ae60;
 }
 .vcard .fn,
 .vcard .nickname {
@@ -2462,7 +2462,7 @@
 }
 .vco-map .leaflet-container .leaflet-control-attribution .vco-knightlab-brand span,
 .vco-map .leaflet-container .leaflet-control-attribution a.vco-knightlab-brand span {
-  color: #c34528;
+  color: #27ae60;
   display: inline-block;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -2473,7 +2473,7 @@
 .vco-map .leaflet-container .leaflet-control-attribution .vco-knightlab-brand:hover,
 .vco-map .leaflet-container .leaflet-control-attribution a.vco-knightlab-brand:hover {
   text-decoration: none;
-  color: #dd735a;
+  color: #4bd786;
 }
 .vco-map .leaflet-container img.leaflet-image-layer {
   max-width: none !important;
@@ -2700,7 +2700,7 @@
   color: #a5a5a5;
 }
 .vco-map .vco-mapmarker-active {
-  color: #c34528;
+  color: #27ae60;
 }
 .vco-map .vco-mapmarker-image-icon,
 .vco-map .vco-mapmarker-image-icon-active {
@@ -2715,7 +2715,7 @@
 }
 .vco-map .vco-mapmarker-image-icon-active {
   opacity: 1;
-  border: 4px solid #c34528;
+  border: 4px solid #27ae60;
   -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);
   filter: grayscale(0);
