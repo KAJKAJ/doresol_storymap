@@ -729,7 +729,7 @@
   background-color: #ffffff;
   cursor: pointer;
   font-weight: bold;
-  color: #737373;
+  color: #75e0a2;
 }
 .vco-menubar-button .vco-icon-arrow-up,
 .vco-menubar-button .vco-icon-arrow-down {
@@ -746,7 +746,7 @@
 }
 .vco-mobile .vco-menubar-button:hover {
   background-color: rgba(217, 217, 217, 0.67);
-  color: #737373;
+  color: #75e0a2;
 }
 .vco-mobile .vco-menubar-button:active {
   background: #27ae60;
@@ -1248,7 +1248,7 @@
 .vco-slidenav-previous .vco-slidenav-content-container .vco-slidenav-description,
 .vco-slidenav-next .vco-slidenav-content-container .vco-slidenav-description {
   text-shadow: 1px 1px 1px #ffffff;
-  color: #333333;
+  color: #27ae60;
 }
 .vco-slidenav-previous .vco-slidenav-content-container.vco-slidenav-inverted .vco-slidenav-icon,
 .vco-slidenav-next .vco-slidenav-content-container.vco-slidenav-inverted .vco-slidenav-icon,
@@ -1257,7 +1257,7 @@
 .vco-slidenav-previous .vco-slidenav-content-container.vco-slidenav-inverted .vco-slidenav-description,
 .vco-slidenav-next .vco-slidenav-content-container.vco-slidenav-inverted .vco-slidenav-description {
   color: #ffffff;
-  text-shadow: 1px 1px 1px #333333;
+  text-shadow: 1px 1px 1px #27ae60;
 }
 /* ICONS
 ================================================== */
@@ -1692,10 +1692,10 @@
   vertical-align: middle;
   text-align: left;
   text-shadow: none;
-  color: #737373;
+  color: #75e0a2;
 }
 .vco-text p {
-  color: #737373;
+  color: #75e0a2;
 }
 .vco-text h2.vco-headline-title,
 .vco-text h2.vco-headline {
@@ -1709,14 +1709,14 @@
   line-height: 15px;
   font-weight: normal;
   margin: 0 0 2px 0;
-  color: #b3b3b3;
+  color: #ddf7e8;
 }
 .vco-text .vco-headline-date small,
 .vco-text h3.vco-headline-date small {
   font-size: 15px;
   line-height: 15px;
   font-weight: normal;
-  color: #b3b3b3;
+  color: #ddf7e8;
 }
 .vco-text .vco-text-date {
   display: inline-block;
@@ -1724,7 +1724,7 @@
   font-weight: normal;
   margin-top: 10px;
   font-size: 12px;
-  color: #b3b3b3;
+  color: #ddf7e8;
 }
 .vco-full-image-background .vco-text,
 .vco-full-color-background .vco-text,
@@ -1778,7 +1778,7 @@
   margin-right: 15px;
   font-size: 15px;
   line-height: 21px;
-  color: #333333;
+  color: #27ae60;
 }
 .vco-media .vco-media-twitter blockquote p {
   font-size: 36px;
@@ -1838,7 +1838,7 @@
 .vco-media .vco-media-blockquote blockquote cite {
   font-size: 15px;
   line-height: 21px;
-  color: #333333;
+  color: #27ae60;
   text-align: right;
 }
 .vco-media .vco-media-blockquote blockquote p:before {
@@ -2775,7 +2775,7 @@
   display: relative;
   overflow: hidden;
   top: 0px;
-  background-color: #333333;
+  background-color: #27ae60;
 }
 .vco-map .vco-map-mask {
   width: 100%;
