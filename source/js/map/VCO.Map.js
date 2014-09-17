@@ -115,6 +115,12 @@ VCO.Map = VCO.Class.extend({
 		
 		// Timer
 		this.timer = null;
+
+		// Touchpad Events
+		this.touch_scale = 1;
+		this.scroll = {
+			start_time: null
+		};
 		
 		// Merge Data and Options
 		VCO.Util.mergeData(this.options, options);
@@ -522,7 +528,21 @@ VCO.Map = VCO.Class.extend({
 		this.fire("loaded", this.data);
 	},
 	
-	
+	_onWheel: function(e) {
+		var self = this;
+		var currentZoom = this._getMapZoom();
+
+		if(e.wheelDeltaY > 0){
+			currentZoom++;
+		}else{
+			currentZoom--;
+		}
+
+		this.zoomTo(currentZoom);
+		
+		e.preventDefault();
+		e.stopPropagation(e);
+	},
 	
 	/*	Private Methods
 	================================================== */
@@ -563,7 +583,13 @@ VCO.Map = VCO.Class.extend({
 	},
 	
 	_initEvents: function() {
+		var self = this;
 		
+		this._el.map.addEventListener('wheel', function(e) {
+			self._onWheel(e);
+		});
+		
+		//this.on("wheel", this._onWheel, this);
 	}
 	
 });
