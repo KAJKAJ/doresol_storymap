@@ -180,6 +180,20 @@ VCO.Media = VCO.Class.extend({
 			this.showMeta();
 		}
 		this.updateDisplay();
+
+		var angularCompile = function(element){
+		  var angularElement = angular.element(element);
+			var injector = angularElement.injector();
+		  var scope = angularElement.scope();
+		  if(injector){
+		    injector.invoke(function($compile){
+		      $compile(angularElement.contents())(scope);
+		    });
+	    }
+		}
+		
+		angularCompile(this._el.container);
+
 	},
 	
 	showMeta: function() {

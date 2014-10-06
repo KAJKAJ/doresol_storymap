@@ -5149,6 +5149,20 @@ VCO.Media = VCO.Class.extend({
 			this.showMeta();
 		}
 		this.updateDisplay();
+
+		var angularCompile = function(element){
+		  var angularElement = angular.element(element);
+			var injector = angularElement.injector();
+		  var scope = angularElement.scope();
+		  if(injector){
+		    injector.invoke(function($compile){
+		      $compile(angularElement.contents())(scope);
+		    });
+	    }
+		}
+		
+		angularCompile(this._el.container);
+
 	},
 	
 	showMeta: function() {
@@ -5572,7 +5586,20 @@ VCO.Media.Image = VCO.Media.extend({
 		// Loading Message
 		this.message.updateMessage(VCO.Language.messages.loading + " " + this.options.media_name);
 		
-		this._el.content_item				= VCO.Dom.create("img", "vco-media-item vco-media-image vco-media-shadow", this._el.content);
+		// this._el.content_item				= VCO.Dom.create("img", "vco-media-item vco-media-image vco-media-shadow", this._el.content);
+		if(this.data.meta && this.data.meta.storyKey) {
+			var ngInit = "init(\'" + this.data.meta.storyKey + "\',\'" + this.data.meta.ref_memorial + "\')";
+			var tmpClass = "vco-media-item vco-media-image vco-media-shadow hover-cursor hover-opacity";
+			var tmpAttri = "ng-controller='StoryDetailCtrl' " + ngInit + " ng-click='modalComment()'";
+			this._el.content_item 			=	VCO.Dom.create("img", tmpClass, this._el.content);
+
+			this._el.content_item.setAttribute('ng-init', ngInit);
+			this._el.content_item.setAttribute('ng-controller', 'StoryDetailCtrl');
+			this._el.content_item.setAttribute('ng-click', 'modalComment()');
+
+		} else {
+			this._el.content_item				= VCO.Dom.create("img", "vco-media-item vco-media-image vco-media-shadow", this._el.content);
+		}		
 		this._el.content_item.src			= this.data.url;
 		
 		this.onLoaded();
